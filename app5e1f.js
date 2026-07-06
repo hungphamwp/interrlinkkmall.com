@@ -55,7 +55,7 @@ let currentCat = 'all';
 let currentSort = 'default';
 let maxPrice = 860;
 let visibleCount = 12;
-let viewMode = 'grid';
+let viewMode = 'list';
 let filteredList = [];
 let wished = new Set();
 
