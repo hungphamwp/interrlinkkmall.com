@@ -341,7 +341,7 @@ function toggleMobileMenu() {
 // ─── SCROLL HEADER ─────────────────────────────────────────────────────────
 window.addEventListener('scroll', () => {
   document.getElementById('mainHeader').style.background =
-    window.scrollY > 20 ? 'rgba(4,13,26,0.98)' : 'rgba(4,13,26,0.92)';
+    window.scrollY > 20 ? 'rgba(255,255,255,0.98)' : 'rgba(255,255,255,0.95)';
 });
 
 // ─── NEWSLETTER ────────────────────────────────────────────────────────────
