@@ -358,9 +358,9 @@ footer { background: var(--surface); border-top: 1px solid var(--border); paddin
 }
 @media (max-width: 768px) {
   .search-container { max-width: 100%; order: 3; flex-basis: 100%; }
-  .header-nav { gap: 4px; }
+  .header-nav { gap: 4px; margin-left: auto; }
   .header-nav .nav-link:first-child { display: none; }
-  .hamburger { display: flex; margin-left: auto; }
+  .hamburger { display: flex; }
   .cat-grid { grid-template-columns: repeat(4, 1fr); }
   .sale-bar-inner { flex-wrap: wrap; gap: 10px; justify-content: center; }
   .cart-drawer { width: 100%; }
